@@ -1,7 +1,8 @@
 /* Python з нуля · 9 клас — уроки й автоперевірка  */
 /* Налаштування курсу */
 const COURSE={g:9,key:'lpy9:',url:'https://whyuxavier.github.io/learn-python-9/',other:{g:8,url:'../learn-python/'},
- title:'Списки, рядки, словники, файли та ігри',zero:true,ver:2};
+ title:'Списки, рядки, словники, файли та ігри',zero:true,ver:2,
+ sheet:'https://script.google.com/macros/s/AKfycbzGpSWGe5ju18HXUu8xExUrhCz15mY51WmkelIoa0lO23vZy59V2nKOjIUODyT3N8ns/exec'};
 
 /* Схеми інтерфейсу курсу для уроку 0 (кольори — з теми сайту) */
 const GD={
