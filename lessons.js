@@ -399,5 +399,5 @@ const AUTO={
  13:[[/Entry\(|Text\(/,/Spinbox\(/],[/def\s+caesar\s*\(\s*\w+\s*,\s*\w+\s*\)/,/\breturn\b/],/%\s*(len\(|33\b)/,[/Зашифрувати/,/Розшифрувати/,/caesar\([^\n]*-\s*\w+/],[/Зламати/,/range\(\s*1\s*,\s*33\s*\)/],[/ord\(/,/chr\(/]],
  14:['grid(*6',c=>(c.match(/Button\(/g)||[]).length>=3,[/[\w)]\s*\/\s*[\w(]/,/[\w)]\s*\*\s*[\w(]/],[/\.delete\(\s*0/,/\.insert\(\s*0/],[/except\s+ValueError/,/except\s+ZeroDivisionError/],/Очистити/],
  15:[(c,f)=>/^\s*(import\s+grades|from\s+grades\s+import)/m.test(M(f)),(c,f)=>(M(f).match(/^\s*assert\s/gm)||[]).length>=6,(c,f)=>[3,4,6,7,9,10].filter(n=>new RegExp('level\\(\\s*'+n+'\\s*\\)').test(M(f))).length>=4,(c,f)=>!/mark\s*<=\s*10\b/.test(G(f))&&/def\s+level/.test(G(f)),(c,f)=>/if\s+(not\s+\w+|len\(\s*\w+\s*\)\s*==\s*0)/.test(G(f)),(c,f)=>/__name__/.test(G(f))],
- 16:[null,/on_key_down|keyboard\./,[/Actor\(/,/\.append\(|\[\s*Actor\(/],/screen\.draw\.text/,[/space/i,/Гру закінчено|game.?over/i],null,null]
+ 16:[(c,f,raw)=>/^#.{8,}/.test(raw.trimStart()),/on_key_down|keyboard\./,[/Actor\(/,/\.append\(|\[\s*Actor\(/],/screen\.draw\.text/,[/space/i,/Гру закінчено|game.?over/i],/\w*(speed|швидк)\w*\s*[+*]=|\+=\s*0?\.\d/i,null]
 };
